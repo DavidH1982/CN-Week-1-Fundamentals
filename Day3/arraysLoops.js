@@ -79,6 +79,8 @@
 
 // Activity 1
 
+// console.log("Activity 1");
+
 // let favFilms = ["Hitman's Bodyguard", "Transporter", "Empire Records", "Men in Black", "District 9"];
 
 // favFilms.push("Carrie", "The Shining");
@@ -87,17 +89,20 @@
 //     console.log(favFilms[i]);
 // }
 
-// Activity 2
+// // Activity 2
+
+// console.log("Activity 2");
 
 // let randomNumber = [];
 
-// while (randomNumber.length < 6){
+// for ( let i = 0; i < 6; i++ ){
 //     randomNumber.push(Math.ceil(Math.random()*49));
+//     console.log(`${randomNumber[i]}`)
 // }
 
-// console.log(`${randomNumber}`);
+// // Activity 3
 
-// Activity 3
+// console.log("Activity 3");
 
 // let num = [];
 
@@ -108,7 +113,9 @@
 //     console.log(`${lastNumber}`);
 // }
 
-// Activity 4
+// // Activity 4
+
+// console.log("Activity 4");
 
 // let film = ["Gone in 60 Seconds", "Despicable Me", "Elf", "The Italian Job"];
 
@@ -122,7 +129,9 @@
 //     console.log(`Boo, we wanted ${film[2]}`);
 // }
 
-// Activity 5
+// // Activity 5
+
+// console.log("Activity 5");
 
 // let numArray = [];
 
@@ -151,16 +160,18 @@
 
 // Activity 6
 
-// let bobsFollowers = ["Andrew", "Mandy", "Michael", "Katie"];
-// let hannahsFollowers = ["Peter", "Annette", "David", "Mandy", "Katie"];
+// console.log("Activity 6");
 
-// for ( let i = 0 ; i < bobsFollowers.length ; i++) {
-//     for ( let j = 0 ; j < hannahsFollowers.length ; j++){
-//         if (hannahsFollowers[j] === bobsFollowers[i]) {
-//             console.log(`${hannahsFollowers[j]} is in both groups`);
-//         }
-//     }
-// }
+let bobsFollowers = ["Andrew", "Mandy", "Michael", "Katie"];
+let hannahsFollowers = ["Peter", "Annette", "David", "Mandy", "Katie"];
+
+for ( let i = 0 ; i < bobsFollowers.length ; i++) {
+    for ( let j = 0 ; j < hannahsFollowers.length ; j++){
+        if (hannahsFollowers[j] === bobsFollowers[i]) {
+            console.log(`${hannahsFollowers[j]} is in both groups`);
+        }
+    }
+}
 
 //  Grahams version
 // let mufos = [];
@@ -189,15 +200,3 @@
 //     }
 
 //     console.log(`The mutual followers are ${mufos}.`);
-
-// Noemis version
-
-//     let bobsFollowers = ["Annabelle", "Hélöise", "Esteban", "Joshua"]
-// let hannahsFollowers = ["Joshua", "Samantha", "Annabelle", "Amélie"]
-// for ( let i = 0; i < bobsFollowers.length ; i++ ) {
-//     for (let l = 0; l < hannahsFollowers.length ; l++) {
-//         if (bobsFollowers[i] == hannahsFollowers[l]) {
-//             console.log(`${bobsFollowers[i]} is both a follower of Bob and Hanna`)
-//         }
-//     }
-// }

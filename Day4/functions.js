@@ -56,6 +56,9 @@
 
 
 // Activity 1
+
+// console.log("Activity 1");
+
 // const factorial = (n) => {
 //     if ((n === 0) || (n === 1)) {
 //         return 1;
@@ -68,84 +71,86 @@
 
 // Activity 2
 
-// let orderCount = 0
+console.log("Activity 2");
 
-// const takeOrder = (topping1, topping2) => {
-//     console.log(`Pizza with ${topping1} and ${topping2}`);
-//     orderCount++;
+let orderCount = 0
+
+const takeOrder = (topping1, topping2) => {
+    console.log(`Pizza with ${topping1} and ${topping2}`);
+    orderCount++;
+}
+
+takeOrder("Pepperoni", "Mushroom");
+takeOrder("Chicken", "Sweetcorn");
+takeOrder("Ham", "Pineapple");
+console.log(`You have ordered ${orderCount} pizzas`);
+
+// // Activity 3
+
+// let pinNumber = 1234;
+// let accBalance = 200;
+
+// const cashWithdrawal = (pin, amount) => {
+//     if ((pin === pinNumber) && (amount <= accBalance)) {
+//         accBalance = accBalance - amount;
+//         console.log(`Here is your money. Your remaining balance is £${accBalance}. You are getting poorer by the minute!`)
+//     } else 
+//     if (pin !== pinNumber) {
+//         console.log("Your PIN was incorrect. Can you not remember 4 numbers?");
+//     } else
+//     if (amount > accBalance) {
+//         console.log("You have insufficient funds in your account...Loser!");
+//     }
+// }
+// cashWithdrawal(1234, 100);
+// cashWithdrawal(1234, 50);
+// cashWithdrawal(1235, 50);
+// cashWithdrawal(1234, 75);
+
+// //Peter Marton answer
+
+// const pinCode = 12345678;
+// let accountBalance = 1000;
+// const readline = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+//   });
+
+// function cashMachine() {
+//     readline.question("Please enter your pin number: ", pin => {
+//         if (pin == pinCode){
+//             console.log("Your pin is correct.");
+//             readline.question("Enter the amount you wish to withdraw: ", balance => {
+                
+//                 if (balance <= accountBalance){
+//                     console.log("Your withdrawal is being processed.");
+//                     console.log(`Your new balance is ${accountBalance - balance}.`);
+//                     readline.close();
+//                 } else {
+//                     console.log("Your balance is insufficient, we couldn't complete your transaction.");
+//                     tryAgainWithdrawal();
+//                 }
+//             });
+//         } else {
+//             console.log("Your pin is incorrect!");
+//             console.log("Please try again!");
+//             cashMachine();
+//         }
+//     });
 // }
 
-// takeOrder("Pepperoni", "Mushroom");
-// takeOrder("Chicken", "Sweetcorn");
-// takeOrder("Ham", "Pineapple");
-// console.log(`You have ordered ${orderCount} pizzas`);
-
-// Activity 3
-
-let pinNumber = 1234;
-let accBalance = 200;
-
-const cashWithdrawal = (pin, amount) => {
-    if ((pin === pinNumber) && (amount <= accBalance)) {
-        accBalance = accBalance - amount;
-        console.log(`Here is your money. Your remaining balance is £${accBalance}. You are getting poorer by the minute!`)
-    } else 
-    if (pin !== pinNumber) {
-        console.log("Your PIN was incorrect. Can you not remember 4 numbers?");
-    } else
-    if (amount > accBalance) {
-        console.log("You have insufficient funds in your account...Loser!");
-    }
-}
-cashWithdrawal(1234, 100);
-cashWithdrawal(1234, 50);
-cashWithdrawal(1235, 50);
-cashWithdrawal(1234, 75);
-
-//Peter Marton answer
-
-const pinCode = 12345678;
-let accountBalance = 1000;
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-  });
-
-function cashMachine() {
-    readline.question("Please enter your pin number: ", pin => {
-        if (pin == pinCode){
-            console.log("Your pin is correct.");
-            readline.question("Enter the amount you wish to withdraw: ", balance => {
-                
-                if (balance <= accountBalance){
-                    console.log("Your withdrawal is being processed.");
-                    console.log(`Your new balance is ${accountBalance - balance}.`);
-                    readline.close();
-                } else {
-                    console.log("Your balance is insufficient, we couldn't complete your transaction.");
-                    tryAgainWithdrawal();
-                }
-            });
-        } else {
-            console.log("Your pin is incorrect!");
-            console.log("Please try again!");
-            cashMachine();
-        }
-    });
-}
-
-function tryAgainWithdrawal(){
-    readline.question("Please enter another amount that you wish to withdraw: ", balance => {
+// function tryAgainWithdrawal(){
+//     readline.question("Please enter another amount that you wish to withdraw: ", balance => {
         
-        if (balance <= accountBalance){
-            console.log("Your withdrawal is being processed.");
-            console.log(`Your new balance is ${accountBalance - balance}.`);
-            readline.close();
-        } else {
-            console.log("Your balance is insufficinet, we couldn't complete your transaction.");
-            tryAgainWithdrawal();
-        }
-    });
-}
+//         if (balance <= accountBalance){
+//             console.log("Your withdrawal is being processed.");
+//             console.log(`Your new balance is ${accountBalance - balance}.`);
+//             readline.close();
+//         } else {
+//             console.log("Your balance is insufficinet, we couldn't complete your transaction.");
+//             tryAgainWithdrawal();
+//         }
+//     });
+// }
 
-cashMachine();
+// cashMachine();

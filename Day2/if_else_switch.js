@@ -64,10 +64,19 @@
 // // }
 
 // // Activity 1
+// console.log("Activity 1");
 // let age = Math.floor((Math.random()*50));
-// let country = "UK";
+// if (age >17){
+//     console.log("You are old enough to serve.");
+// } else {
+//     console.log("Sorry, you are too young to drink!");
+// }
 
-// if (age >17 && country == "UK") {
+// // Activity 1 - Stretch
+// console.log("Activity 1 - Stretch");
+
+// let country = "UK";
+// if (age >17 && country === "UK") {
 //     console.log(`Your age is ${age}. You are old enough to serve`);
 // }
 // else {
@@ -76,44 +85,26 @@
 
 // // Activity 2
 
-// let topping = Math.floor(Math.random()*6);
+// console.log("Activity 2");
 
-// if (topping == 01) {
-//     topping1 = "Pepperoni";
-// }
-// else if (topping == 1) {
-//     topping1 = "Bacon"
-// }
-// else if (topping == 2) {
-//     topping1 = "Mushroom"
-// }
-// else if (topping == 3) {
-//     topping1 = "Chicken"
-// }
-// else if (topping == 4) {
-//     topping1 = "Anchovies"
-// }
-// else if (topping == 5) {
-//     topping1 = "Peppers"
-// }
-// else {
-//     topping1 = "Onions"
-// }
+// let topping = "Mushroom";
 
 // switch(topping) {
 //     case "Pepperoni":
 //     case "Bacon":
-//         console.log(`It is important that I have ${topping1} on my pizza`);
+//         console.log(`It is important that I have ${topping} on my pizza`);
 //         break;
 //     case "Mushroom":
 //     case "Chicken":
-//         console.log(`I don't mind having ${topping1} on my pizza`);
+//         console.log(`I don't mind having ${topping} on my pizza`);
 //         break;
 //     default:
-//         console.log(`${topping1} should not be on my pizza`);
+//         console.log(`${topping} should not be on my pizza`);
 // }
 
 // // Activity 3
+
+// console.log("Activity 3");
 
 // let password = "abcdefghijkl";
 
@@ -121,8 +112,12 @@
 //     console.log("Password is too short. Must be at least 8 letters");
 // }
 // else {
-//     console.log(`The password is ${password.length} letters long`);
+//     console.log(`The password is ${password}`);
 // }
+
+// // Activity 3 - Stretch
+
+// console.log("Activity 3 - Stretch");
 
 // let num = Math.floor(Math.random()*60);
 // if (num % 3 == 0 && num % 5 == 0 && num>0){
@@ -141,6 +136,8 @@
 // }
 
 // // Activity 4
+
+// console.log("Activity 4");
 
 // let num1 = Math.floor(Math.random()*60);
 
@@ -161,9 +158,13 @@
 
 // // Activity 5
 
-// let num2 = "8008";
+// console.log("Activity 5");
 
-// if (num2.charAt(0) == num2.charAt(num2.length-1) && num2.charAt(1) == num2.charAt(num2.length-2)) {
+// let num2 = 8008;
+// let numString = num2.toString();
+// let reverseNumString = numString.split('').reverse().join('');
+
+// if (reverseNumString == num2) {
 //     console.log(`${num2} is a palindrome.`)
 // }
 // else {
@@ -171,6 +172,8 @@
 // }
 
 //  Activity 6
+
+// console.log("Activity 6");
 
 // let hour = Math.floor(Math.random()*24);
 // let minute = Math.floor(Math.random()*60);
@@ -210,19 +213,26 @@
 //     console.log(`The time is ${hourString}:${minuteString}, I am at work at ${placeOfWork}`);
 // }
 
-// Activity 7
+// // Activity 7
+
+// console.log("Activity 7");
 
 // let str = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi"
 // let vowel = ["a", "e", "i", "o", "u"];
-// let strString = str.split('');
+// let strString = str.split('').reverse();
 
 // // console.log(strString.length);
 
-// for(let i = strString.length; [i] == vowel; i--){
-//     console.log(`The last vowel in the string is ${[i]}`);
+// for(let i = 0; i < strString.length; i++){
+//     if(strString[i] == vowel.values){
+//         console.log(`The last vowel in the sequence is ${strString[i]}`);
+//     }
 // }
+// // Consider this one a failure
 
 // Activity 8
+
+// console.log("Activity 8");
 
 // let word = "poipoipoipoipoipo";
 // let wordArray = word.split('');
@@ -238,13 +248,15 @@
 
 // Activity 9
 
-let num1 = Math.floor(Math.random()*20);
-let num2 = Math.floor(Math.random()*20);
-let num3 = num1*num2;
+// console.log("Activity 9");
 
-if (num3 % 2 === 0) {
-    console.log(`${num3} is even`);
-}
-else {
-    console.log(`${num3} is odd`);
-}
+// let num1 = Math.floor(Math.random()*20);
+// let num2 = Math.floor(Math.random()*20);
+// let num3 = num1*num2;
+
+// if (num3 % 2 === 0) {
+//     console.log(`${num3} is even`);
+// }
+// else {
+//     console.log(`${num3} is odd`);
+// }
